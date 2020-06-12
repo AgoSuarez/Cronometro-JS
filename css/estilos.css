@@ -1,0 +1,65 @@
+body {
+  background-image: url("../imagenes/fondo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.hora h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 75px;
+  color: darkblue;
+}
+
+span {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  font-size: 100px;
+  color: blue;
+}
+
+article {
+  margin-bottom: 4em;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: space-between;
+  width: 75%;
+}
+
+.boton {
+  width: 30%;
+  font-size: 40px;
+  background-color: green;
+  color: white;
+  padding: 0.2em;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#boton3 {
+  background-color: orange;
+}
+
+#boton2 {
+  background-color: red;
+}
+
+.disable {
+  filter: grayscale(4);
+  pointer-events: none;
+}
+
+.boton:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
