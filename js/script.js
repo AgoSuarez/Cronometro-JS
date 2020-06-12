@@ -1,3 +1,4 @@
+//Inicializamos variables
 let corriendo = false;
 let hora = 0;
 let minutos = 0;
@@ -7,16 +8,20 @@ const boton = document.getElementById("boton");
 const boton2 = document.getElementById("boton2");
 const boton3 = document.getElementById("boton3");
 
+//Presionamos el boton de STOP
 boton2.addEventListener("click", () => {
   corriendo = false;
+  //Paramos el "tiempo"
   clearInterval(intervalo);
   boton.classList.remove("disable");
   boton2.classList.add("disable");
 });
-
+//Presionamos sobre Reiniciar
 boton3.addEventListener("click", () => {
   corriendo = false;
+  //Paramos el "tiempo"
   clearInterval(intervalo);
+  //Reiniciamos todo
   hora = 0;
   minutos = 0;
   segundos = 0;
@@ -29,7 +34,7 @@ boton3.addEventListener("click", () => {
   boton2.classList.add("disable");
   boton3.classList.add("disable");
 });
-
+//Presionamos sobre boton de iniciar
 boton.addEventListener("click", () => {
   if (!corriendo) {
     corriendo = true;
@@ -60,6 +65,7 @@ function muestraDecimas(decimas) {
 }
 
 function muestraTiempo() {
+  //Vamos aumentando los distintos valores a mostrar
   decimas++;
   if (decimas == 100) {
     decimas = 0;
