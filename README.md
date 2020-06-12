@@ -1,1 +1,3 @@
-"# Cronometro-JS" 
+# Cronometro-JS
+
+Cronometro Web sencillo
